@@ -56,7 +56,6 @@ namespace Web.Controllers
 
             if (items == null || items.Count == 0)
             {
-                // No items in memory – user probably didn't run BulkImport yet
                 return BadRequest("No items to generate ZIP for. Please upload JSON first.");
             }
 
@@ -82,19 +81,10 @@ namespace Web.Controllers
                         continue;
                     }
 
-                    // Folder name per item: item-<importId>
                     var folderName = $"item-{importId}";
 
-                    // Create default.jpg entry in that folder (empty placeholder file)
                     var entryPath = $"{folderName}/default.jpg";
                     var entry = zipArchive.CreateEntry(entryPath);
-
-                    // Optional: write a few bytes so it's not 0-length (not necessary for assignment)
-                    using (var entryStream = entry.Open())
-                    using (var writer = new StreamWriter(entryStream))
-                    {
-                        writer.Write("placeholder");
-                    }
                 }
             }
 
