@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\_menuitemrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\_menuitemrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
               "RelativeDocumentMoniker": "Web\\Program.cs",
@@ -67,20 +67,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Catalog.cshtml",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\Catalog.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Items\\Catalog.cshtml",
               "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\Catalog.cshtml",
               "RelativeToolTip": "Web\\Views\\Items\\Catalog.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAwAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-29T21:31:10.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_MenuItemRow.cshtml",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_MenuItemRow.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Items\\_MenuItemRow.cshtml",
@@ -93,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_RestaurantCard.cshtml",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_RestaurantCard.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Items\\_RestaurantCard.cshtml",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ItemsController.cs",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Controllers\\ItemsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ItemsController.cs",
@@ -119,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ItemsDbRepository.cs",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repositories\\ItemsDbRepository.cs",
