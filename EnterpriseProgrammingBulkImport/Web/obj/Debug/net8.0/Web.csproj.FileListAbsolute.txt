@@ -153,3 +153,4 @@ C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\
 C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\Web\obj\Debug\net8.0\Web.pdb
 C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\Web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\Web\obj\Debug\net8.0\Web.sourcelink.json
