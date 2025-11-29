@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Bulk Import";
+}
+
+<h2>Bulk Import</h2>
+
+<form asp-action="BulkImport" asp-controller="BulkImport" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">Upload JSON file</label>
+        <input type="file" name="jsonFile" class="form-control" accept=".json" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Upload &amp; Preview</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="text-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

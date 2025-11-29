@@ -1,0 +1,43 @@
+﻿@using Domain.Interfaces
+@using Domain.Models
+@model IEnumerable<IItemValidating>
+
+@{
+    ViewData["Title"] = "Preview Imported Items";
+}
+
+<h2>Preview Imported Items</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Name / Title</th>
+            <th>Owner / Restaurant</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            if (item is Restaurant r)
+            {
+                <tr>
+                    <td>Restaurant</td>
+                    <td>@r.Name</td>
+                    <td>@r.OwnerEmailAddress</td>
+                    <td>@r.Status</td>
+                </tr>
+            }
+            else if (item is MenuItem m)
+            {
+                <tr>
+                    <td>Menu Item</td>
+                    <td>@m.Title</td>
+                    <td>@m.RestaurantId</td>
+                    <td>@m.Status</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
