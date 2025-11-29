@@ -6,6 +6,8 @@ using Domain.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO.Compression;
+using Domain.Models;
 
 namespace Web.Controllers
 {
@@ -45,6 +47,61 @@ namespace Web.Controllers
 
             tempRepository.Save(items);
             return View("Preview", items);
+        }
+        [HttpGet]
+        public IActionResult DownloadTemplateZip(
+        [FromKeyedServices("memory")] IItemsRepository tempRepository)
+        {
+            var items = tempRepository.GetAll();
+
+            if (items == null || items.Count == 0)
+            {
+                // No items in memory – user probably didn't run BulkImport yet
+                return BadRequest("No items to generate ZIP for. Please upload JSON first.");
+            }
+
+            using var memoryStream = new MemoryStream();
+
+            using (var zipArchive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+            {
+                foreach (var item in items)
+                {
+                    string? importId = null;
+
+                    if (item is Restaurant r)
+                    {
+                        importId = r.ImportId;
+                    }
+                    else if (item is MenuItem m)
+                    {
+                        importId = m.ImportId;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(importId))
+                    {
+                        continue;
+                    }
+
+                    // Folder name per item: item-<importId>
+                    var folderName = $"item-{importId}";
+
+                    // Create default.jpg entry in that folder (empty placeholder file)
+                    var entryPath = $"{folderName}/default.jpg";
+                    var entry = zipArchive.CreateEntry(entryPath);
+
+                    // Optional: write a few bytes so it's not 0-length (not necessary for assignment)
+                    using (var entryStream = entry.Open())
+                    using (var writer = new StreamWriter(entryStream))
+                    {
+                        writer.Write("placeholder");
+                    }
+                }
+            }
+
+            memoryStream.Position = 0;
+            var fileName = "items-template.zip";
+
+            return File(memoryStream.ToArray(), "application/zip", fileName);
         }
     }
 }
