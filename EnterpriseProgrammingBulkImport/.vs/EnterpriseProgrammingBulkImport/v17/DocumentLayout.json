@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|solutionrelative:domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Class1.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Class1.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Class1.cs",
-              "RelativeToolTip": "DataAccess\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:41:02.599Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "Domain\\Class1.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Class1.cs",
-              "RelativeToolTip": "Domain\\Class1.cs",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Development.json",
+              "RelativeToolTip": "Web\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:40:49.514Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-29T22:27:46.7Z"
             }
           ]
         }
