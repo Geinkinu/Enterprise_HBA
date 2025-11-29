@@ -44,7 +44,9 @@ namespace Domain.Models
         public List<string> GetValidators()
         {
             if (Restaurant != null && !string.IsNullOrWhiteSpace(Restaurant.OwnerEmailAddress))
+            {
                 return new List<string> { Restaurant.OwnerEmailAddress };
+            }
 
             return new List<string>();
         }
@@ -53,5 +55,6 @@ namespace Domain.Models
         {
             return "_MenuItemRow";
         }
+
     }
 }

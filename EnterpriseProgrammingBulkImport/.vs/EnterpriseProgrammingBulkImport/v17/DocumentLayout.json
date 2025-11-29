@@ -3,24 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\_restaurantcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\_restaurantcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\filters\\approvedfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\filters\\approvedfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\items\\_menuitemrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\items\\_menuitemrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\dataaccess\\repositories\\itemsdbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\itemsdbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +35,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|solutionrelative:domain\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\web\\views\\bulkimport\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\bulkimport\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +44,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Web\\Program.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
-              "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:32:06.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Catalog.cshtml",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\Catalog.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Items\\Catalog.cshtml",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\Catalog.cshtml",
-              "RelativeToolTip": "Web\\Views\\Items\\Catalog.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAwAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T21:31:10.934Z",
+              "Title": "dbo.Restaurants [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql",
+              "ToolTip": "dbo.Restaurants [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-29T22:11:58.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_MenuItemRow.cshtml",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_MenuItemRow.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Items\\_MenuItemRow.cshtml",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_MenuItemRow.cshtml",
-              "RelativeToolTip": "Web\\Views\\Items\\_MenuItemRow.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T21:30:48.153Z",
+              "DocumentIndex": 1,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-29T22:10:51.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_RestaurantCard.cshtml",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_RestaurantCard.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Items\\_RestaurantCard.cshtml",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_RestaurantCard.cshtml",
-              "RelativeToolTip": "Web\\Views\\Items\\_RestaurantCard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T21:30:14.813Z",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Development.json",
+              "RelativeToolTip": "Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-29T22:08:25.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ItemsController.cs",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Controllers\\ItemsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ItemsController.cs",
               "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Controllers\\ItemsController.cs",
               "RelativeToolTip": "Web\\Controllers\\ItemsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:27:47.249Z",
+              "WhenOpened": "2025-11-29T21:47:10.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T21:46:49.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\MenuItem.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\MenuItem.cs",
-              "RelativeToolTip": "Domain\\Models\\MenuItem.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwDgAAAABAAAAAAAAAA==",
+              "Title": "ApprovedFilter.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Filters\\ApprovedFilter.cs",
+              "RelativeDocumentMoniker": "Web\\Filters\\ApprovedFilter.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Filters\\ApprovedFilter.cs",
+              "RelativeToolTip": "Web\\Filters\\ApprovedFilter.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:26:24.303Z",
+              "WhenOpened": "2025-11-29T21:45:57.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Restaurant.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\Restaurant.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Restaurant.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\Restaurant.cs",
-              "RelativeToolTip": "Domain\\Models\\Restaurant.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Title": "ItemsDbRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAcwIUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:25:25.49Z",
+              "WhenOpened": "2025-11-29T21:44:50.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Preview.cshtml",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\BulkImport\\Preview.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\BulkImport\\Preview.cshtml",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Views\\BulkImport\\Preview.cshtml",
-              "RelativeToolTip": "Web\\Views\\BulkImport\\Preview.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-29T21:24:35.875Z",
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\MenuItem.cs",
+              "RelativeToolTip": "Domain\\Models\\MenuItem.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwC8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T21:44:19.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Interfaces\\IItemRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IItemRepository.cs",
-              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Interfaces\\IItemRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Restaurant.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Models\\Restaurant.cs",
+              "RelativeToolTip": "Domain\\Models\\Restaurant.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T21:24:34.324Z",
+              "WhenOpened": "2025-11-29T21:42:39.566Z",
               "EditorCaption": ""
             }
           ]

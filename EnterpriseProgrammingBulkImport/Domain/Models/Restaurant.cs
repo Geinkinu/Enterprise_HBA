@@ -41,9 +41,9 @@ namespace Domain.Models
         public List<string> GetValidators()
         {
             return new List<string>
-        {
-            "siteadmin@example.com"
-        };
+            {
+                "siteadmin@example.com"
+            };
         }
 
         public string GetCardPartial()

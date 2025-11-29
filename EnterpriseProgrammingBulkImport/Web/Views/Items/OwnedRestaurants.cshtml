@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Domain.Models.Restaurant>
+
+@{
+    ViewData["Title"] = "My Restaurants";
+}
+
+<h2>My Restaurants</h2>
+
+<ul>
+    @foreach (var r in Model)
+    {
+        <li>
+            @r.Name
+            <a asp-action="Verification"
+               asp-route-restaurantId="@r.Id">
+                View pending menu items
+            </a>
+        </li>
+    }
+</ul>
