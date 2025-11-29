@@ -1,6 +1,7 @@
 ﻿using DataAccess.Contexts;
 using Domain.Interfaces;
 using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,6 +60,21 @@ namespace DataAccess.Repositories
             {
                 _dbContext.SaveChanges();
             }
+        }
+
+        public List<Restaurant> GetApprovedRestaurants()
+        {
+            return _dbContext.Restaurants
+                .Where(r => r.Status == "Approved")
+                .ToList();
+        }
+
+        public List<MenuItem> GetApprovedMenuItemsByRestaurant(int restaurantId)
+        {
+            return _dbContext.MenuItems
+                .Include(m => m.Restaurant)
+                .Where(m => m.Status == "Approved" && m.RestaurantId == restaurantId)
+                .ToList();
         }
 
         public void Clear()

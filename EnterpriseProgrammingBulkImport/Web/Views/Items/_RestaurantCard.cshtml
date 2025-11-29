@@ -1,0 +1,21 @@
+﻿@model Domain.Models.Restaurant
+
+<div class="card mb-3" style="width: 18rem;">
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <img src="@Model.ImagePath" class="card-img-top" alt="@Model.Name" />
+    }
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">
+            Owner: @Model.OwnerEmailAddress
+        </p>
+        <a asp-controller="Items"
+           asp-action="Catalog"
+           asp-route-mode="menuitems"
+           asp-route-restaurantId="@Model.Id"
+           class="btn btn-primary">
+            View Menu
+        </a>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿@using Domain.Interfaces
+@using Domain.Models
+@model IEnumerable<IItemValidating>
+
+@{
+    ViewData["Title"] = "Catalog";
+    var mode = (string)(ViewBag.Mode ?? "restaurants");
+}
+
+<h2>Catalog</h2>
+
+<div class="mb-3">
+    <a asp-action="Catalog" asp-route-mode="restaurants" class="btn btn-outline-primary">Restaurants</a>
+</div>
+
+@if (mode == "restaurants")
+{
+    <div class="d-flex flex-wrap gap-3">
+        @foreach (var item in Model)
+        {
+            if (item is Restaurant r)
+            {
+                @Html.Partial(r.GetCardPartial(), r)
+            }
+        }
+    </div>
+}
+else if (mode == "menuitems")
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Restaurant</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                if (item is MenuItem m)
+                {
+                    @Html.Partial(m.GetCardPartial(), m)
+                }
+            }
+        </tbody>
+    </table>
+}

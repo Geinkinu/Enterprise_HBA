@@ -15,6 +15,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddKeyedScoped<IItemsRepository, ItemsInMemoryRepository>("memory");
 builder.Services.AddKeyedScoped<IItemsRepository, ItemsDbRepository>("db");
 builder.Services.AddScoped<ImportItemFactory>();
+builder.Services.AddScoped<ItemsDbRepository>();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

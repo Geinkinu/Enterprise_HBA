@@ -40,14 +40,16 @@ namespace Domain.Models
 
         public List<string> GetValidators()
         {
-            // TODO
-            throw new NotImplementedException();
+            return new List<string>
+        {
+            "siteadmin@example.com"
+        };
         }
 
         public string GetCardPartial()
         {
-            // TODO
-            throw new NotImplementedException();
+            return "_RestaurantCard";
         }
+
     }
 }

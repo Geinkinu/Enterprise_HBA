@@ -43,14 +43,15 @@ namespace Domain.Models
 
         public List<string> GetValidators()
         {
-            // TODO
-            throw new NotImplementedException();
+            if (Restaurant != null && !string.IsNullOrWhiteSpace(Restaurant.OwnerEmailAddress))
+                return new List<string> { Restaurant.OwnerEmailAddress };
+
+            return new List<string>();
         }
 
         public string GetCardPartial()
         {
-            // TODO
-            throw new NotImplementedException();
+            return "_MenuItemRow";
         }
     }
 }
