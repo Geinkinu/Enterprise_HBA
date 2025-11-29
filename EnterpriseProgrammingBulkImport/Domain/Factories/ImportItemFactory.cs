@@ -2,10 +2,8 @@
 using Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Domain.Factories
 {
@@ -23,7 +21,7 @@ namespace Domain.Factories
 
             foreach (var dto in dtos)
             {
-                if (string.Equals(dto.Type, "restaurant", System.StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(dto.Type, "restaurant", StringComparison.OrdinalIgnoreCase))
                 {
                     var restaurant = new Restaurant
                     {
@@ -35,15 +33,19 @@ namespace Domain.Factories
 
                     items.Add(restaurant);
                 }
-                else if (string.Equals(dto.Type, "menuItem", System.StringComparison.OrdinalIgnoreCase))
+                else if (string.Equals(dto.Type, "menuItem", StringComparison.OrdinalIgnoreCase))
                 {
+                    var restaurantImportId = dto.RestaurantId ?? dto.RestaurantIdWithSpaces;
                     var menuItem = new MenuItem
+
                     {
                         ImportId = dto.Id ?? string.Empty,
                         Title = dto.Title ?? string.Empty,
                         Price = dto.Price ?? 0m,
-                        Status = "Pending"
+                        Status = "Pending",
+                        RestaurantImportId = restaurantImportId?.Trim()
                     };
+
                     items.Add(menuItem);
                 }
             }
@@ -57,10 +59,13 @@ namespace Domain.Factories
             public string? Id { get; set; }
             public string? Name { get; set; }
             public string? OwnerEmailAddress { get; set; }
-
             public string? Title { get; set; }
             public decimal? Price { get; set; }
+            [JsonPropertyName("restaurantId")]
             public string? RestaurantId { get; set; }
+            [JsonPropertyName(" restaurantId ")]
+            public string? RestaurantIdWithSpaces { get; set; }
         }
+
     }
 }

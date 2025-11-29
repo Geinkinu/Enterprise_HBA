@@ -31,6 +31,9 @@ namespace Domain.Models
         [MaxLength(50)]
         public string Status { get; set; } = "Pending";
 
+        [MaxLength(300)]
+        public string? ImagePath { get; set; }
+
         public ICollection<MenuItem>? MenuItems { get; set; }
 
         // TODO

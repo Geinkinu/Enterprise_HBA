@@ -28,24 +28,43 @@ namespace DataAccess.Repositories
 
         public void Save(IEnumerable<IItemValidating> items)
         {
-            foreach (var item in items)
+            var restaurants = items.OfType<Restaurant>().ToList();
+            var menuItems = items.OfType<MenuItem>().ToList();
+
+            if (restaurants.Any())
             {
-                switch (item)
+                _dbContext.Restaurants.AddRange(restaurants);
+                _dbContext.SaveChanges();
+            }
+            var restaurantMap = restaurants
+                .GroupBy(r => r.ImportId)
+                .ToDictionary(
+                    g => g.Key,
+                    g => g.First().Id
+                );
+
+            foreach (var menuItem in menuItems)
+            {
+                var importKey = menuItem.RestaurantImportId?.Trim();
+
+                if (!string.IsNullOrWhiteSpace(importKey) &&
+                    restaurantMap.TryGetValue(importKey, out var restaurantId))
                 {
-                    case Restaurant restaurant:
-                        _dbContext.Restaurants.Add(restaurant);
-                        break;
-
-                    case MenuItem menuItem:
-                        _dbContext.MenuItems.Add(menuItem);
-                        break;
-
-                    default:
-                        break;
+                    menuItem.RestaurantId = restaurantId;
+                    _dbContext.MenuItems.Add(menuItem);
                 }
             }
 
-            _dbContext.SaveChanges();
+            if (menuItems.Any())
+            {
+                _dbContext.SaveChanges();
+            }
         }
+
+        public void Clear()
+        {
+            // Nothing to clear for the DB repository
+        }
+
     }
 }

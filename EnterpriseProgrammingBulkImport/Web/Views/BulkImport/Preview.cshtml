@@ -42,6 +42,19 @@
     </tbody>
 </table>
 
+<hr />
+
+<h3>Step 2: Upload Images ZIP and Commit</h3>
+
+<form asp-action="Commit" asp-controller="BulkImport" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">Images ZIP</label>
+        <input type="file" name="imagesZip" class="form-control" accept=".zip" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Upload Images &amp; Commit</button>
+</form>
+
 <p>
     <a asp-action="DownloadTemplateZip" asp-controller="BulkImport" class="btn btn-secondary">
         Download Images ZIP Template

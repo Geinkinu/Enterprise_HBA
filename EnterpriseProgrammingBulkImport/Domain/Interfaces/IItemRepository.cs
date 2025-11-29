@@ -11,7 +11,7 @@ namespace Domain.Interfaces
     public interface IItemsRepository
     {
         IReadOnlyList<IItemValidating> GetAll();
-
         void Save(IEnumerable<IItemValidating> items);
+        void Clear();
     }
 }

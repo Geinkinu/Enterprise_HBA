@@ -35,6 +35,12 @@ namespace Domain.Models
         [MaxLength(50)]
         public string Status { get; set; } = "Pending";
 
+        [MaxLength(300)]
+        public string? ImagePath { get; set; }
+
+        [NotMapped]
+        public string? RestaurantImportId { get; set; }
+
         public List<string> GetValidators()
         {
             // TODO

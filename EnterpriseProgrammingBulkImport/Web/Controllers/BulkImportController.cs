@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO.Compression;
 using Domain.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Web.Controllers
 {
@@ -92,6 +93,77 @@ namespace Web.Controllers
             var fileName = "items-template.zip";
 
             return File(memoryStream.ToArray(), "application/zip", fileName);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Commit(
+            IFormFile imagesZip,
+            [FromKeyedServices("memory")] IItemsRepository tempRepository,
+            [FromKeyedServices("db")] IItemsRepository dbRepository,
+            [FromServices] IWebHostEnvironment env)
+
+        {
+            if (imagesZip == null || imagesZip.Length == 0)
+            {
+                ModelState.AddModelError(string.Empty, "Please upload a ZIP file with images.");
+                return BadRequest(ModelState);
+            }
+
+            var items = tempRepository.GetAll();
+            if (items == null || items.Count == 0)
+            {
+                return BadRequest("No items in memory. Please perform bulk import first.");
+            }
+
+            var imagesRoot = Path.Combine(env.WebRootPath, "images", "items");
+            Directory.CreateDirectory(imagesRoot);
+
+            using (var zipStream = imagesZip.OpenReadStream())
+            using (var zipArchive = new ZipArchive(zipStream, ZipArchiveMode.Read))
+            {
+                foreach (var entry in zipArchive.Entries)
+                {
+                    if (string.IsNullOrEmpty(entry.FullName) || !entry.FullName.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
+                        continue;
+
+                    var parts = entry.FullName.Split('/', StringSplitOptions.RemoveEmptyEntries);
+                    if (parts.Length < 2)
+                        continue;
+
+                    var folderName = parts[0];
+                    var importId = folderName.Replace("item-", "");
+                    var item = items.FirstOrDefault(i =>
+                        (i is Restaurant r && r.ImportId == importId) ||
+                        (i is MenuItem m && m.ImportId == importId));
+
+                    if (item == null)
+                        continue;
+
+                    var uniqueFileName = $"{Guid.NewGuid():N}.jpg";
+                    var filePath = Path.Combine(imagesRoot, uniqueFileName);
+
+                    using (var entryStream = entry.Open())
+                    using (var fileStream = System.IO.File.Create(filePath))
+                    {
+                        await entryStream.CopyToAsync(fileStream);
+                    }
+
+                    var relativePath = $"/images/items/{uniqueFileName}";
+
+                    if (item is Restaurant rItem)
+                    {
+                        rItem.ImagePath = relativePath;
+                    }
+                    else if (item is MenuItem mItem)
+                    {
+                        mItem.ImagePath = relativePath;
+                    }
+                }
+            }
+
+            dbRepository.Save(items);
+            tempRepository.Clear();
+
+            return RedirectToAction("BulkImport", "BulkImport");
         }
     }
 }
