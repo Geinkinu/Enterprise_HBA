@@ -10,10 +10,14 @@ using System.Threading.Tasks;
 namespace Domain.Models
 {
     public class Restaurant : IItemValidating
-    {
+    {  
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string ImportId { get; set; } = string.Empty;
 
         [Required]
         [MaxLength(200)]

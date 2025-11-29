@@ -4,6 +4,7 @@ using Web.Data;
 using DataAccess.Contexts;
 using Domain.Interfaces;
 using DataAccess.Repositories;
+using Domain.Factories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddMemoryCache();
 builder.Services.AddKeyedScoped<IItemsRepository, ItemsInMemoryRepository>("memory");
 builder.Services.AddKeyedScoped<IItemsRepository, ItemsDbRepository>("db");
+builder.Services.AddScoped<ImportItemFactory>();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

@@ -30,14 +30,9 @@ namespace DataAccess.Repositories
 
         public void Save(IEnumerable<IItemValidating> items)
         {
-            // store a copy as a List so it can be retrieved later in Commit
             var list = new List<IItemValidating>(items);
             _cache.Set(CacheKey, list);
         }
-
-        /// <summary>
-        /// Helper to clear cache after Commit. We'll call this later.
-        /// </summary>
         public void Clear()
         {
             _cache.Remove(CacheKey);

@@ -15,6 +15,10 @@ namespace Domain.Models
         public Guid Id { get; set; } = Guid.NewGuid();
 
         [Required]
+        [MaxLength(50)]
+        public string ImportId { get; set; } = string.Empty;
+
+        [Required]
         [MaxLength(200)]
         public string Title { get; set; } = string.Empty;
 
@@ -22,7 +26,6 @@ namespace Domain.Models
         [Range(0, 9999)]
         public decimal Price { get; set; }
 
-        // Foreign key to Restaurant
         [ForeignKey(nameof(Restaurant))]
         public int RestaurantId { get; set; }
 
@@ -32,18 +35,15 @@ namespace Domain.Models
         [MaxLength(50)]
         public string Status { get; set; } = "Pending";
 
-        // --- IItemValidating implementation (logic later) ---
-
         public List<string> GetValidators()
         {
-            // TODO: later this will return the restaurant owner's email.
-            // We'll use Restaurant.OwnerEmailAddress when available.
+            // TODO
             throw new NotImplementedException();
         }
 
         public string GetCardPartial()
         {
-            // TODO: later we’ll return the partial view name, e.g. "_MenuItemRow"
+            // TODO
             throw new NotImplementedException();
         }
     }

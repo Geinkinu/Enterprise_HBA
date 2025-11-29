@@ -20,8 +20,6 @@ namespace DataAccess.Repositories
 
         public IReadOnlyList<IItemValidating> GetAll()
         {
-            // For now, just return all restaurants + menu items as IItemValidating.
-            // We can refine later (e.g. only approved, only pending, etc.).
             var restaurants = _dbContext.Restaurants.Cast<IItemValidating>().ToList();
             var menuItems = _dbContext.MenuItems.Cast<IItemValidating>().ToList();
 
@@ -43,16 +41,11 @@ namespace DataAccess.Repositories
                         break;
 
                     default:
-                        // If something else implements IItemValidating in future, ignore or throw.
                         break;
                 }
             }
 
             _dbContext.SaveChanges();
         }
-
-        // Later we’ll add:
-        // - methods to get pending/approved items
-        // - Approve(...) for SE3.3
     }
 }
