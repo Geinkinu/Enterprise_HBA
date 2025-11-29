@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\dataaccess\\repositories\\itemsdbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\itemsdbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\dataaccess\\repositories\\itemsinmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repositories\\itemsinmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\domain\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5027618-61A8-4838-B8F5-FB522AB00184}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|c:\\users\\gerra\\documents\\mcast\\hba (enterprise)\\enterpriseprogrammingbulkimport\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{788B2B57-2A30-4643-BBC3-365D830D8D65}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -22,12 +34,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataAccess",
+              "Title": "ItemsDbRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\ItemsDbRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T20:24:19.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemsInMemoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsInMemoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repositories\\ItemsInMemoryRepository.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsInMemoryRepository.cs",
+              "RelativeToolTip": "DataAccess\\Repositories\\ItemsInMemoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T20:23:50.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Interfaces\\IItemRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IItemRepository.cs",
+              "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Interfaces\\IItemRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T20:22:16.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataAccess.csproj",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
               "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",
               "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
@@ -45,15 +96,15 @@
               "RelativeDocumentMoniker": "Web\\Program.cs",
               "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
               "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T20:02:05.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Web",
+              "DocumentIndex": 5,
+              "Title": "Web.csproj",
               "DocumentMoniker": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Web.csproj",
               "RelativeDocumentMoniker": "Web\\Web.csproj",
               "ToolTip": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Web\\Web.csproj",

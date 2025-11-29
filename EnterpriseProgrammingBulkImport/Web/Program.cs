@@ -2,10 +2,17 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Web.Data;
 using DataAccess.Contexts;
+using Domain.Interfaces;
+using DataAccess.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddMemoryCache();
+builder.Services.AddKeyedScoped<IItemsRepository, ItemsInMemoryRepository>("memory");
+builder.Services.AddKeyedScoped<IItemsRepository, ItemsDbRepository>("db");
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

@@ -11,7 +11,8 @@
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.16",
           "Microsoft.EntityFrameworkCore.Design": "8.0.16",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.16"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.16",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1"
         },
         "runtime": {
           "DataAccess.dll": {}
