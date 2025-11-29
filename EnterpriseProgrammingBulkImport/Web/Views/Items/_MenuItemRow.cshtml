@@ -1,0 +1,13 @@
+﻿@model Domain.Models.MenuItem
+
+<tr>
+    <td>@Model.Title</td>
+    <td>@Model.Price.ToString("0.00")</td>
+    <td>@Model.Restaurant?.Name</td>
+    <td>
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+            <img src="@Model.ImagePath" alt="@Model.Title" style="height:50px;" />
+        }
+    </td>
+</tr>

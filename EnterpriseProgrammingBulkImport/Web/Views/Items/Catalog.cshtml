@@ -1,0 +1,114 @@
+﻿@using Domain.Interfaces
+@using Domain.Models
+@model IEnumerable<IItemValidating>
+
+@{
+    ViewData["Title"] = "Catalog";
+    var mode = (string)(ViewBag.Mode ?? "restaurants");
+    bool approveMode = ViewBag.ApproveMode == true;
+    string itemType = ViewBag.ItemType as string ?? "";
+}
+
+
+<h2>Catalog</h2>
+
+<div class="mb-3">
+    <a asp-action="Catalog" asp-route-mode="restaurants" class="btn btn-outline-primary">Restaurants</a>
+</div>
+
+@if (mode == "restaurants")
+{
+    if (approveMode)
+    {
+        <form asp-action="Approve" asp-controller="Items" method="post">
+            <input type="hidden" name="itemType" value="restaurant" />
+
+            <div class="d-flex flex-wrap gap-3">
+                @foreach (var item in Model)
+                {
+                    if (item is Restaurant r)
+                    {
+                        <div>
+                            <input type="checkbox" name="restaurantIds" value="@r.Id" />
+                            @Html.Partial(r.GetCardPartial(), r)
+                        </div>
+                    }
+                }
+            </div>
+
+            <button type="submit" class="btn btn-success mt-3">Approve selected restaurants</button>
+        </form>
+    }
+    else
+    {
+        <div class="d-flex flex-wrap gap-3">
+            @foreach (var item in Model)
+            {
+                if (item is Restaurant r)
+                {
+                    @Html.Partial(r.GetCardPartial(), r)
+                }
+            }
+        </div>
+    }
+}
+
+else if (mode == "menuitems")
+{
+    if (approveMode)
+    {
+        <form asp-action="Approve" asp-controller="Items" method="post">
+            <input type="hidden" name="itemType" value="menuitem" />
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Restaurant</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (item is MenuItem m)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="menuItemIds" value="@m.Id" />
+                                </td>
+                                @Html.Partial(m.GetCardPartial(), m)
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+            <button type="submit" class="btn btn-success mt-3">Approve selected menu items</button>
+        </form>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Restaurant</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    if (item is MenuItem m)
+                    {
+                        @Html.Partial(m.GetCardPartial(), m)
+                    }
+                }
+            </tbody>
+        </table>
+    }
+}
