@@ -3,14 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Models
 {
     public class Restaurant : IItemValidating
-    {  
+    {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -35,9 +32,6 @@ namespace Domain.Models
         public string? ImagePath { get; set; }
 
         public ICollection<MenuItem>? MenuItems { get; set; }
-
-        // TODO
-
         public List<string> GetValidators()
         {
             return new List<string>
@@ -45,11 +39,9 @@ namespace Domain.Models
                 "siteadmin@example.com"
             };
         }
-
         public string GetCardPartial()
         {
             return "_RestaurantCard";
         }
-
     }
 }
