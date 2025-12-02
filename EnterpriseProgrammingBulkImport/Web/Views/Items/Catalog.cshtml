@@ -9,11 +9,14 @@
     string itemType = ViewBag.ItemType as string ?? "";
 }
 
-
 <h2>Catalog</h2>
 
 <div class="mb-3">
-    <a asp-action="Catalog" asp-route-mode="restaurants" class="btn btn-outline-primary">Restaurants</a>
+    <a asp-action="Catalog"
+       asp-route-mode="restaurants"
+       class="btn btn-outline-primary">
+        Restaurants
+    </a>
 </div>
 
 @if (mode == "restaurants")
@@ -30,13 +33,15 @@
                     {
                         <div>
                             <input type="checkbox" name="restaurantIds" value="@r.Id" />
-                            @Html.Partial(r.GetCardPartial(), r)
+                            @Html.Partial("_RestaurantCard", r)
                         </div>
                     }
                 }
             </div>
 
-            <button type="submit" class="btn btn-success mt-3">Approve selected restaurants</button>
+            <button type="submit" class="btn btn-success mt-3">
+                Approve selected restaurants
+            </button>
         </form>
     }
     else
@@ -46,13 +51,12 @@
             {
                 if (item is Restaurant r)
                 {
-                    @Html.Partial(r.GetCardPartial(), r)
+                    @Html.Partial("_RestaurantCard", r)
                 }
             }
         </div>
     }
 }
-
 else if (mode == "menuitems")
 {
     if (approveMode)
@@ -79,14 +83,16 @@ else if (mode == "menuitems")
                                 <td>
                                     <input type="checkbox" name="menuItemIds" value="@m.Id" />
                                 </td>
-                                @Html.Partial(m.GetCardPartial(), m)
+                                @Html.Partial("_MenuItemRow", m)
                             </tr>
                         }
                     }
                 </tbody>
             </table>
 
-            <button type="submit" class="btn btn-success mt-3">Approve selected menu items</button>
+            <button type="submit" class="btn btn-success mt-3">
+                Approve selected menu items
+            </button>
         </form>
     }
     else
@@ -105,7 +111,9 @@ else if (mode == "menuitems")
                 {
                     if (item is MenuItem m)
                     {
-                        @Html.Partial(m.GetCardPartial(), m)
+                        <tr>
+                            @Html.Partial("_MenuItemRow", m)
+                        </tr>
                     }
                 }
             </tbody>

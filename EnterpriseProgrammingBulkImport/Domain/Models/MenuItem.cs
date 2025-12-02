@@ -51,10 +51,6 @@ namespace Domain.Models
             return new List<string>();
         }
 
-        public string GetCardPartial()
-        {
-            return "_MenuItemRow";
-        }
-
+        public string GetCardPartial() => "_MenuItemRow";
     }
 }

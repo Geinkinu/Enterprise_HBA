@@ -1,14 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
+using System.Linq;
 using System.Threading.Tasks;
 using Domain.Factories;
 using Domain.Interfaces;
+using Domain.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using System.IO.Compression;
-using Domain.Models;
-using Microsoft.AspNetCore.Hosting;
 
 namespace Web.Controllers
 {
@@ -47,11 +49,13 @@ namespace Web.Controllers
             var items = _factory.Create(json);
 
             tempRepository.Save(items);
+
             return View("Preview", items);
         }
+
         [HttpGet]
         public IActionResult DownloadTemplateZip(
-        [FromKeyedServices("memory")] IItemsRepository tempRepository)
+            [FromKeyedServices("memory")] IItemsRepository tempRepository)
         {
             var items = tempRepository.GetAll();
 
@@ -83,24 +87,24 @@ namespace Web.Controllers
                     }
 
                     var folderName = $"item-{importId}";
-
                     var entryPath = $"{folderName}/default.jpg";
-                    var entry = zipArchive.CreateEntry(entryPath);
+
+                    zipArchive.CreateEntry(entryPath);
                 }
             }
 
             memoryStream.Position = 0;
-            var fileName = "items-template.zip";
+            const string fileName = "items-template.zip";
 
             return File(memoryStream.ToArray(), "application/zip", fileName);
         }
+
         [HttpPost]
         public async Task<IActionResult> Commit(
             IFormFile imagesZip,
             [FromKeyedServices("memory")] IItemsRepository tempRepository,
             [FromKeyedServices("db")] IItemsRepository dbRepository,
             [FromServices] IWebHostEnvironment env)
-
         {
             if (imagesZip == null || imagesZip.Length == 0)
             {
@@ -122,15 +126,24 @@ namespace Web.Controllers
             {
                 foreach (var entry in zipArchive.Entries)
                 {
-                    if (string.IsNullOrEmpty(entry.FullName) || !entry.FullName.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
+                    if (string.IsNullOrEmpty(entry.FullName) ||
+                        !entry.FullName.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
+                    {
                         continue;
+                    }
 
                     var parts = entry.FullName.Split('/', StringSplitOptions.RemoveEmptyEntries);
                     if (parts.Length < 2)
                         continue;
 
-                    var folderName = parts[0];
-                    var importId = folderName.Replace("item-", "");
+                    var folderSegment = parts.FirstOrDefault(p =>
+                        p.StartsWith("item-", StringComparison.OrdinalIgnoreCase));
+
+                    if (string.IsNullOrEmpty(folderSegment))
+                        continue;
+
+                    var importId = folderSegment.Substring("item-".Length);
+
                     var item = items.FirstOrDefault(i =>
                         (i is Restaurant r && r.ImportId == importId) ||
                         (i is MenuItem m && m.ImportId == importId));

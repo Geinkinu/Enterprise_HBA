@@ -1,13 +1,32 @@
 ﻿@model Domain.Models.MenuItem
+@using System
 
-<tr>
-    <td>@Model.Title</td>
-    <td>@Model.Price.ToString("0.00")</td>
-    <td>@Model.Restaurant?.Name</td>
-    <td>
-        @if (!string.IsNullOrEmpty(Model.ImagePath))
+@{
+    var rawPath = Model.ImagePath;
+    string imageUrl = null;
+
+    if (!string.IsNullOrWhiteSpace(rawPath))
+    {
+        if (rawPath.StartsWith("http", StringComparison.OrdinalIgnoreCase) ||
+            rawPath.StartsWith("/"))
         {
-            <img src="@Model.ImagePath" alt="@Model.Title" style="height:50px;" />
+            imageUrl = rawPath;
         }
-    </td>
-</tr>
+        else
+        {
+            imageUrl = Url.Content("~/" + rawPath.TrimStart('~', '/'));
+        }
+    }
+}
+
+<td>@Model.Title</td>
+<td>@Model.Price.ToString("0.00")</td>
+<td>@Model.Restaurant?.Name</td>
+<td>
+    @if (!string.IsNullOrEmpty(imageUrl))
+    {
+        <img src="@imageUrl"
+             alt="@Model.Title"
+             style="height:50px;" />
+    }
+</td>

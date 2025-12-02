@@ -1,15 +1,38 @@
 ﻿@model Domain.Models.Restaurant
+@using System
+
+@{
+    var rawPath = Model.ImagePath;
+    string imageUrl = null;
+
+    if (!string.IsNullOrWhiteSpace(rawPath))
+    {
+        if (rawPath.StartsWith("http", StringComparison.OrdinalIgnoreCase) ||
+            rawPath.StartsWith("/"))
+        {
+            imageUrl = rawPath;
+        }
+        else
+        {
+            imageUrl = Url.Content("~/" + rawPath.TrimStart('~', '/'));
+        }
+    }
+}
 
 <div class="card mb-3" style="width: 18rem;">
-    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    @if (!string.IsNullOrEmpty(imageUrl))
     {
-        <img src="@Model.ImagePath" class="card-img-top" alt="@Model.Name" />
+        <img src="@imageUrl"
+             class="card-img-top"
+             alt="@Model.Name" />
     }
+
     <div class="card-body">
         <h5 class="card-title">@Model.Name</h5>
         <p class="card-text">
             Owner: @Model.OwnerEmailAddress
         </p>
+
         <a asp-controller="Items"
            asp-action="Catalog"
            asp-route-mode="menuitems"

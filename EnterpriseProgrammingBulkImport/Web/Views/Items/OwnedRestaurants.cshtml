@@ -6,13 +6,15 @@
 
 <h2>My Restaurants</h2>
 
-<ul>
+<ul class="list-group">
     @foreach (var r in Model)
     {
-        <li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
             @r.Name
+
             <a asp-action="Verification"
-               asp-route-restaurantId="@r.Id">
+               asp-route-restaurantId="@r.Id"
+               class="btn btn-sm btn-outline-primary">
                 View pending menu items
             </a>
         </li>
