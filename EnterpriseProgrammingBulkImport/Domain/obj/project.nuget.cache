@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ASvhQlJGnXQ=",
+  "dgSpecHash": "JNxB3kufp60=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gerra\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\compg001\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

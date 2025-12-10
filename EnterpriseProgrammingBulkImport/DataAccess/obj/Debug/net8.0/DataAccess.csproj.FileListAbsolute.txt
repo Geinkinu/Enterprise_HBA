@@ -1,18 +1,18 @@
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.dll
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.pdb
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\Domain.dll
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\Domain.pdb
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.dll
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.pdb
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
-C:\Users\gerra\Documents\MCAST\HBA (Enterprise)\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\Domain.dll
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\bin\Debug\net8.0\Domain.pdb
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\compg001\Documents\Enterprise\EnterpriseProgrammingBulkImport\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

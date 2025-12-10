@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {}
+    "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {
+    "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\gerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\compg001\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compg001\\Documents\\Enterprise\\EnterpriseProgrammingBulkImport\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\compg001\\Documents\\NuGet.Config",
+          "C:\\Users\\compg001\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +27,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/MITA-PMD-SRE/_packaging/MITA-PMD-SRE/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/MITA-PMD-Taxation/_packaging/SRE-Packages/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/MITA-PMD-Taxation/_packaging/Taxation-Packages/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -71,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
