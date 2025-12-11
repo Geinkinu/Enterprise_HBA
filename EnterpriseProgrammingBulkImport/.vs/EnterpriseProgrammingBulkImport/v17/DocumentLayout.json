@@ -60,8 +60,7 @@
               "RelativeToolTip": "Web\\Views\\Items\\OwnedRestaurants.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T20:05:44.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:05:44.816Z"
             },
             {
               "$type": "Document",
@@ -73,8 +72,7 @@
               "RelativeToolTip": "Web\\Views\\Items\\Catalog.cshtml",
               "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T20:05:41.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:05:41.038Z"
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "RelativeToolTip": "Web\\Views\\Items\\_MenuItemRow.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T20:05:39.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:05:39.795Z"
             },
             {
               "$type": "Document",
@@ -99,8 +96,7 @@
               "RelativeToolTip": "Web\\Views\\Items\\_RestaurantCard.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-02T20:05:37.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:05:37.717Z"
             },
             {
               "$type": "Document",
@@ -125,18 +121,16 @@
               "RelativeToolTip": "Web\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:05:35.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:05:35.97Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "dbo.Restaurants [Data]",
+              "Title": "dbo.Restaurants.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql",
-              "ToolTip": "dbo.Restaurants [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-12-02T20:04:10.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:04:10.13Z"
             },
             {
               "$type": "Document",
@@ -148,8 +142,7 @@
               "RelativeToolTip": "Web\\Controllers\\BulkImportController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T20:02:04.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T20:02:04.215Z"
             },
             {
               "$type": "Document",
@@ -161,8 +154,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ViewState": "AgIAAJACAAAAAAAAAAAjwKMCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-02T19:55:45.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T19:55:45.681Z"
             }
           ]
         }
