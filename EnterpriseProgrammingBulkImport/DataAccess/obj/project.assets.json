@@ -4091,23 +4091,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gerra\\.nuget\\packages\\": {},
+    "C:\\Users\\Gerrard Compton\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\gerra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\Gerrard Compton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gerrard Compton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4122,8 +4122,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\gerra\\Documents\\MCAST\\HBA (Enterprise)\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj"
+            "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Domain\\Domain.csproj"
             }
           }
         }
@@ -4138,7 +4138,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4179,7 +4179,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
