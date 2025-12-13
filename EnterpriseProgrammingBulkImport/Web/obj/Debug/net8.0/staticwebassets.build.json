@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X2TadBV6G+QHWukQ5GMj3YenndSdDxIAYfgRx8hRJSE=",
+  "Hash": "1GW+Y0CBfJ//WxXb/wDY+JdHlMqBQi+e0DM2o3Hdm1Q=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -1676,6 +1676,27 @@
       "OriginalItemSpec": "wwwroot\\images\\items\\4f9412ea327c4110884a9027fc358b69.jpg"
     },
     {
+      "Identity": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\56552124fc8a44f78090b73abc06f561.jpg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "images/items/56552124fc8a44f78090b73abc06f561#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j89x9bsf63",
+      "Integrity": "/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\items\\56552124fc8a44f78090b73abc06f561.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\5c4ab05c01574542a5088c42885d032d.jpg",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -1695,6 +1716,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\items\\5c4ab05c01574542a5088c42885d032d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\6dd0df5ba8954fa3894a48f360a9758e.jpg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "images/items/6dd0df5ba8954fa3894a48f360a9758e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j89x9bsf63",
+      "Integrity": "/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\items\\6dd0df5ba8954fa3894a48f360a9758e.jpg"
     },
     {
       "Identity": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\7227649b77094a479dcfaa9a31ad0418.jpg",
@@ -6846,6 +6888,88 @@
       ]
     },
     {
+      "Route": "images/items/56552124fc8a44f78090b73abc06f561.j89x9bsf63.jpg",
+      "AssetFile": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\56552124fc8a44f78090b73abc06f561.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Dec 2025 11:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j89x9bsf63"
+        },
+        {
+          "Name": "label",
+          "Value": "images/items/56552124fc8a44f78090b73abc06f561.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/56552124fc8a44f78090b73abc06f561.jpg",
+      "AssetFile": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\56552124fc8a44f78090b73abc06f561.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Dec 2025 11:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg="
+        }
+      ]
+    },
+    {
       "Route": "images/items/5c4ab05c01574542a5088c42885d032d.5ipweew5fc.jpg",
       "AssetFile": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\5c4ab05c01574542a5088c42885d032d.jpg",
       "Selectors": [],
@@ -6924,6 +7048,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/6dd0df5ba8954fa3894a48f360a9758e.j89x9bsf63.jpg",
+      "AssetFile": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\6dd0df5ba8954fa3894a48f360a9758e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Dec 2025 11:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j89x9bsf63"
+        },
+        {
+          "Name": "label",
+          "Value": "images/items/6dd0df5ba8954fa3894a48f360a9758e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg="
+        }
+      ]
+    },
+    {
+      "Route": "images/items/6dd0df5ba8954fa3894a48f360a9758e.jpg",
+      "AssetFile": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\6dd0df5ba8954fa3894a48f360a9758e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "890697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Dec 2025 11:03:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/R0fnPaj4y28wCKJTrDN4k2YLFTxbpCE7VUwHdITuJg="
         }
       ]
     },

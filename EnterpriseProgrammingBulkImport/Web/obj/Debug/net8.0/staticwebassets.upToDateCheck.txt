@@ -15,7 +15,9 @@ wwwroot\images\items\43b8b678371a49798dcd9c5609e6e992.jpg
 wwwroot\images\items\4b3b5bb759b94f6590f167489b28690c.jpg
 wwwroot\images\items\4bf880305b9a49ec8e4e3ec6ddc510f1.jpg
 wwwroot\images\items\4f9412ea327c4110884a9027fc358b69.jpg
+wwwroot\images\items\56552124fc8a44f78090b73abc06f561.jpg
 wwwroot\images\items\5c4ab05c01574542a5088c42885d032d.jpg
+wwwroot\images\items\6dd0df5ba8954fa3894a48f360a9758e.jpg
 wwwroot\images\items\7227649b77094a479dcfaa9a31ad0418.jpg
 wwwroot\images\items\7ae24aeacab24bc4ad9669472ddf1fd6.jpg
 wwwroot\images\items\84a67a0c3e9c4f40a6ce5a0dc7dfcb78.jpg

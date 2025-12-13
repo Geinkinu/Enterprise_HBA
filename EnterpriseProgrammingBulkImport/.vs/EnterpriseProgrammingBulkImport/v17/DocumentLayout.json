@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerrard compton\\documents\\mcast\\1st year\\1st semaster\\enterprise programming\\hba\\enterpriseprogrammingbulkimport\\web\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|c:\\users\\gerrard compton\\documents\\mcast\\1st year\\1st semaster\\enterprise programming\\hba\\enterpriseprogrammingbulkimport\\web\\views\\bulkimport\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFB45391-1A25-44B1-A4D7-4F195FF90ECF}|Web\\Web.csproj|solutionrelative:web\\views\\bulkimport\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -77,6 +81,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\appsettings.Production.json",
+              "RelativeToolTip": "Web\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-13T11:28:04.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Preview.cshtml",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Views\\BulkImport\\Preview.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\BulkImport\\Preview.cshtml",
@@ -84,12 +101,11 @@
               "RelativeToolTip": "Web\\Views\\BulkImport\\Preview.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAmwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-13T10:57:25.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:57:25.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ImportItemFactory.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Domain\\Factories\\ImportItemFactory.cs",
               "RelativeDocumentMoniker": "Domain\\Factories\\ImportItemFactory.cs",
@@ -97,12 +113,11 @@
               "RelativeToolTip": "Domain\\Factories\\ImportItemFactory.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:56:48.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:56:48.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\DataAccess\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Contexts\\AppDbContext.cs",
@@ -110,32 +125,29 @@
               "RelativeToolTip": "DataAccess\\Contexts\\AppDbContext.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAawBYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:55:42.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:55:42.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "dbo.MenuItems.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.MenuItems.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.MenuItems.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-13T10:51:32.586Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "dbo.MenuItems [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.MenuItems.sql",
-              "ToolTip": "dbo.MenuItems [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-12-13T10:51:32.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.Restaurants [Data]",
+              "Title": "dbo.Restaurants.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql",
-              "ToolTip": "dbo.Restaurants [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BulkImportDb/True/SqlTable/dbo.Restaurants.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-12-13T10:51:12.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:51:12.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BulkImportController.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Controllers\\BulkImportController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\BulkImportController.cs",
@@ -143,12 +155,11 @@
               "RelativeToolTip": "Web\\Controllers\\BulkImportController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:48:48.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:48:48.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_RestaurantCard.cshtml",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Views\\Items\\_RestaurantCard.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Items\\_RestaurantCard.cshtml",
@@ -156,12 +167,11 @@
               "RelativeToolTip": "Web\\Views\\Items\\_RestaurantCard.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-13T10:47:57.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:47:57.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "049cd2af6c2042829f7744b6e7070faf.jpg",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\wwwroot\\images\\items\\049cd2af6c2042829f7744b6e7070faf.jpg",
               "RelativeDocumentMoniker": "Web\\wwwroot\\images\\items\\049cd2af6c2042829f7744b6e7070faf.jpg",
@@ -169,12 +179,11 @@
               "RelativeToolTip": "Web\\wwwroot\\images\\items\\049cd2af6c2042829f7744b6e7070faf.jpg",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-12-13T10:47:01.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:47:01.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ItemsController.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Controllers\\ItemsController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ItemsController.cs",
@@ -182,12 +191,11 @@
               "RelativeToolTip": "Web\\Controllers\\ItemsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T18:46:47.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:46:47.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ApprovedFilter.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Filters\\ApprovedFilter.cs",
               "RelativeDocumentMoniker": "Web\\Filters\\ApprovedFilter.cs",
@@ -195,12 +203,11 @@
               "RelativeToolTip": "Web\\Filters\\ApprovedFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T18:44:38.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:44:38.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Web\\Program.cs",
               "RelativeDocumentMoniker": "Web\\Program.cs",
@@ -208,12 +215,11 @@
               "RelativeToolTip": "Web\\Program.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAawCgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T18:44:18.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:44:18.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ItemsDbRepository.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\DataAccess\\Repositories\\ItemsDbRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repositories\\ItemsDbRepository.cs",
@@ -221,12 +227,11 @@
               "RelativeToolTip": "DataAccess\\Repositories\\ItemsDbRepository.cs",
               "ViewState": "AgIAAHcAAAAAAAAAAADwv5IAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T18:32:37.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:32:37.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Restaurant.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Domain\\Models\\Restaurant.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\Restaurant.cs",
@@ -234,12 +239,11 @@
               "RelativeToolTip": "Domain\\Models\\Restaurant.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T18:31:57.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:31:57.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "C:\\Users\\Gerrard Compton\\Documents\\MCAST\\1st Year\\1st Semaster\\Enterprise Programming\\HBA\\EnterpriseProgrammingBulkImport\\Domain\\Models\\MenuItem.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\MenuItem.cs",
@@ -247,8 +251,7 @@
               "RelativeToolTip": "Domain\\Models\\MenuItem.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T11:37:02.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:37:02.114Z"
             }
           ]
         }

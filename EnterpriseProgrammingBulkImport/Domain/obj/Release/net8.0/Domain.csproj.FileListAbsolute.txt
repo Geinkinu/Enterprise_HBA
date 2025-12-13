@@ -1,0 +1,12 @@
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\bin\Release\net8.0\Domain.deps.json
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\bin\Release\net8.0\Domain.dll
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\bin\Release\net8.0\Domain.pdb
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.sourcelink.json
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.dll
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\refint\Domain.dll
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\Domain.pdb
+C:\Users\Gerrard Compton\Documents\MCAST\1st Year\1st Semaster\Enterprise Programming\HBA\EnterpriseProgrammingBulkImport\Domain\obj\Release\net8.0\ref\Domain.dll
