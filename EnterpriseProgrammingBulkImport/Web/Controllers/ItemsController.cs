@@ -1,23 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using DataAccess.Repositories;
 using Domain.Interfaces;
-using Domain.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Web.Filters;
-
 
 namespace Web.Controllers
 {
     public class ItemsController : Controller
     {
         private readonly ItemsDbRepository _itemsDbRepository;
+        private readonly IConfiguration _configuration;
 
-        public ItemsController(ItemsDbRepository itemsDbRepository)
+        public ItemsController(ItemsDbRepository itemsDbRepository, IConfiguration configuration)
         {
             _itemsDbRepository = itemsDbRepository;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -25,37 +27,39 @@ namespace Web.Controllers
         {
             IEnumerable<IItemValidating> items;
 
-            if (mode == "menuitems" && restaurantId.HasValue)
+            if (string.Equals(mode, "menuitems", StringComparison.OrdinalIgnoreCase) && restaurantId.HasValue)
             {
                 var menuItems = _itemsDbRepository.GetApprovedMenuItemsByRestaurant(restaurantId.Value);
                 items = menuItems.Cast<IItemValidating>();
+                ViewBag.Mode = "menuitems";
+                ViewBag.RestaurantId = restaurantId.Value;
             }
             else
             {
                 var restaurants = _itemsDbRepository.GetApprovedRestaurants();
                 items = restaurants.Cast<IItemValidating>();
-                mode = "restaurants";
+                ViewBag.Mode = "restaurants";
+                ViewBag.RestaurantId = null;
             }
-
-            ViewBag.Mode = mode;
-            ViewBag.RestaurantId = restaurantId;
 
             return View(items);
         }
 
         [Authorize]
+        [HttpGet]
         public IActionResult Verification(int? restaurantId = null)
         {
             var email = User.FindFirstValue(ClaimTypes.Email) ?? User.Identity?.Name;
 
-            if (string.IsNullOrEmpty(email))
+            if (string.IsNullOrWhiteSpace(email))
             {
                 return Challenge();
             }
 
-            const string siteAdminEmail = "siteadmin@example.com";
-
-            if (string.Equals(email, siteAdminEmail, StringComparison.OrdinalIgnoreCase))
+            email = email.Trim();
+            var siteAdminEmail = _configuration["Approval:SiteAdminEmail"]?.Trim();
+            if (!string.IsNullOrWhiteSpace(siteAdminEmail) &&
+                string.Equals(email, siteAdminEmail, StringComparison.OrdinalIgnoreCase))
             {
                 var pendingRestaurants = _itemsDbRepository.GetPendingRestaurants()
                     .Cast<IItemValidating>()
@@ -64,33 +68,32 @@ namespace Web.Controllers
                 ViewBag.Mode = "restaurants";
                 ViewBag.ApproveMode = true;
                 ViewBag.ItemType = "restaurant";
+                ViewBag.RestaurantId = null;
 
                 return View("Catalog", pendingRestaurants);
             }
-            else
+
+            if (!restaurantId.HasValue)
             {
-                if (!restaurantId.HasValue)
-                {
-                    var owned = _itemsDbRepository.GetOwnedRestaurants(email);
-                    ViewBag.Owned = true;
-                    return View("OwnedRestaurants", owned);
-                }
-                else
-                {
-                    var pendingMenu = _itemsDbRepository
-                        .GetPendingMenuItemsByRestaurant(restaurantId.Value)
-                        .Cast<IItemValidating>()
-                        .ToList();
-
-                    ViewBag.Mode = "menuitems";
-                    ViewBag.ApproveMode = true;
-                    ViewBag.ItemType = "menuitem";
-                    ViewBag.RestaurantId = restaurantId.Value;
-
-                    return View("Catalog", pendingMenu);
-                }
+                var owned = _itemsDbRepository.GetOwnedRestaurants(email);
+                ViewBag.Owned = true;
+                return View("OwnedRestaurants", owned);
             }
+
+            // Step 2: show pending menu items for selected restaurant
+            var pendingMenu = _itemsDbRepository
+                .GetPendingMenuItemsByRestaurant(restaurantId.Value)
+                .Cast<IItemValidating>()
+                .ToList();
+
+            ViewBag.Mode = "menuitems";
+            ViewBag.ApproveMode = true;
+            ViewBag.ItemType = "menuitem";
+            ViewBag.RestaurantId = restaurantId.Value;
+
+            return View("Catalog", pendingMenu);
         }
+
         [Authorize]
         [HttpPost]
         [ServiceFilter(typeof(ApprovalFilter))]
@@ -101,11 +104,23 @@ namespace Web.Controllers
 
             if (string.Equals(itemType, "restaurant", StringComparison.OrdinalIgnoreCase))
             {
-                _itemsDbRepository.ApproveRestaurants(restaurantIds);
+                if (restaurantIds.Any())
+                {
+                    _itemsDbRepository.ApproveRestaurants(restaurantIds);
+                }
             }
             else if (string.Equals(itemType, "menuitem", StringComparison.OrdinalIgnoreCase))
             {
-                _itemsDbRepository.ApproveMenuItems(menuItemIds);
+                if (menuItemIds.Any())
+                {
+                    _itemsDbRepository.ApproveMenuItems(menuItemIds);
+                }
+            }
+            if (Request.Form.ContainsKey("restaurantId") &&
+                int.TryParse(Request.Form["restaurantId"].ToString(), out var rid) &&
+                rid > 0)
+            {
+                return RedirectToAction(nameof(Verification), new { restaurantId = rid });
             }
 
             return RedirectToAction(nameof(Verification));

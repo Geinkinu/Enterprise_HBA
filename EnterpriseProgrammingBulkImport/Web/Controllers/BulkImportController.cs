@@ -55,7 +55,8 @@ namespace Web.Controllers
 
         [HttpGet]
         public IActionResult DownloadTemplateZip(
-            [FromKeyedServices("memory")] IItemsRepository tempRepository)
+            [FromKeyedServices("memory")] IItemsRepository tempRepository,
+            [FromServices] IWebHostEnvironment env)
         {
             var items = tempRepository.GetAll();
 
@@ -63,6 +64,14 @@ namespace Web.Controllers
             {
                 return BadRequest("No items to generate ZIP for. Please upload JSON first.");
             }
+
+            var defaultImagePath = Path.Combine(env.WebRootPath, "images", "default.jpg");
+            if (!System.IO.File.Exists(defaultImagePath))
+            {
+                return BadRequest("Missing default image. Please add it at wwwroot/images/default.jpg");
+            }
+
+            var defaultBytes = System.IO.File.ReadAllBytes(defaultImagePath);
 
             using var memoryStream = new MemoryStream();
 
@@ -89,7 +98,10 @@ namespace Web.Controllers
                     var folderName = $"item-{importId}";
                     var entryPath = $"{folderName}/default.jpg";
 
-                    zipArchive.CreateEntry(entryPath);
+                    var entry = zipArchive.CreateEntry(entryPath);
+
+                    using var entryStream = entry.Open();
+                    entryStream.Write(defaultBytes, 0, defaultBytes.Length);
                 }
             }
 
@@ -151,6 +163,11 @@ namespace Web.Controllers
                     if (item == null)
                         continue;
 
+                    if (item is Restaurant)
+                    {
+                        continue;
+                    }
+
                     var uniqueFileName = $"{Guid.NewGuid():N}.jpg";
                     var filePath = Path.Combine(imagesRoot, uniqueFileName);
 
@@ -162,11 +179,7 @@ namespace Web.Controllers
 
                     var relativePath = $"/images/items/{uniqueFileName}";
 
-                    if (item is Restaurant rItem)
-                    {
-                        rItem.ImagePath = relativePath;
-                    }
-                    else if (item is MenuItem mItem)
+                    if (item is MenuItem mItem)
                     {
                         mItem.ImagePath = relativePath;
                     }

@@ -4,6 +4,12 @@
 
 @{
     ViewData["Title"] = "Preview Imported Items";
+
+    var restaurants = Model.OfType<Restaurant>().ToList();
+    var restaurantNameByImportId = restaurants
+        .Where(r => !string.IsNullOrWhiteSpace(r.ImportId))
+        .GroupBy(r => r.ImportId.Trim())
+        .ToDictionary(g => g.Key, g => g.First().Name);
 }
 
 <h2>Preview Imported Items</h2>
@@ -31,10 +37,15 @@
             }
             else if (item is MenuItem m)
             {
+                var importKey = m.RestaurantImportId?.Trim() ?? "";
+                var restaurantName = restaurantNameByImportId.TryGetValue(importKey, out var name)
+                ? name
+                : "";
+
                 <tr>
                     <td>Menu Item</td>
                     <td>@m.Title</td>
-                    <td>@m.RestaurantId</td>
+                    <td>@restaurantName</td>
                     <td>@m.Status</td>
                 </tr>
             }

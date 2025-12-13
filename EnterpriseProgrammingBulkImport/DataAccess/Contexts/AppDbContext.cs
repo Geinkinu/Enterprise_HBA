@@ -21,9 +21,6 @@ namespace DataAccess.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // If you need extra configuration later, we put it here.
-            // For now EF will use your attributes from Domain.
         }
     }
 }

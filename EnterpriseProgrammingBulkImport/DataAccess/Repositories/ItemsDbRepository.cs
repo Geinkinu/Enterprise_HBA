@@ -128,6 +128,16 @@ namespace DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
+        public List<MenuItem> GetPendingMenuItemsByIds(IEnumerable<Guid> menuItemIds)
+        {
+            var ids = menuItemIds?.ToList() ?? new List<Guid>();
+
+            return _dbContext.MenuItems
+                .Include(m => m.Restaurant)
+                .Where(m => m.Status == "Pending" && ids.Contains(m.Id))
+                .ToList();
+        }
+
         public void Approve(IEnumerable<int> restaurantIds)
         {
             ApproveRestaurants(restaurantIds);
@@ -135,7 +145,6 @@ namespace DataAccess.Repositories
 
         public void Clear()
         {
-            // Nothing to clear for the DB repository
         }
 
     }

@@ -36,8 +36,8 @@ namespace Domain.Factories
                 else if (string.Equals(dto.Type, "menuItem", StringComparison.OrdinalIgnoreCase))
                 {
                     var restaurantImportId = dto.RestaurantId ?? dto.RestaurantIdWithSpaces;
-                    var menuItem = new MenuItem
 
+                    var menuItem = new MenuItem
                     {
                         ImportId = dto.Id ?? string.Empty,
                         Title = dto.Title ?? string.Empty,
@@ -61,11 +61,12 @@ namespace Domain.Factories
             public string? OwnerEmailAddress { get; set; }
             public string? Title { get; set; }
             public decimal? Price { get; set; }
+
             [JsonPropertyName("restaurantId")]
             public string? RestaurantId { get; set; }
+
             [JsonPropertyName(" restaurantId ")]
             public string? RestaurantIdWithSpaces { get; set; }
         }
-
     }
 }
